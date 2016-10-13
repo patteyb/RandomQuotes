@@ -28,7 +28,7 @@ var arrQuotes = [
         tags: 'Positive, Rainbow, Cloud'
     },
     {
-        quote: "If opportunity doesn't know, build a door.",
+        quote: "If opportunity doesn't knock, build a door.",
         saidBy: 'Milton Berle',
         citation: 'TV Weekly',
         year: '1975',
@@ -133,7 +133,7 @@ function printQuote() {
     document.getElementById("main").style.backgroundColor = rgb;
 
     // Build html for quote, source, citation, year and tags
-    quoteHTML = '<p class="quote">' + quote.quote + '</p>';
+    var quoteHTML = '<p class="quote">' + quote.quote + '</p>';
     quoteHTML += '<p class="source">' + quote.saidBy; 
 
     if (quote.citation !== '') {
